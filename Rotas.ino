@@ -1,6 +1,6 @@
 void PaginaInicial() 
 {
-  servidor.send(200, "text/html", "<h1> OI </h1>");
+  meuservidor.send(200, "text/html", "<h1> OI </h1>");
 }
 
 void LigarLed() 
