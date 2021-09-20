@@ -10,14 +10,14 @@ void setup()
   ConectarWiFi("Supergeeks", "supergeeksitu");
   Serial.println(WiFi.localIP());
 
-  servidor.on("/", PaginaInicial);
-  servidor.on("/ligarled", LigarLed);
-  servidor.on("/desligarled", DesligarLed);
+  meuservidor.on("/", PaginaInicial);
+  meuservidor.on("/ligarled", LigarLed);
+  meuservidor.on("/desligarled", DesligarLed);
 
-  servidor.begin();
+  meuservidor.begin();
 }
 
 void loop() 
 {
-  servidor.handleClient();
+  meuservidor.handleClient();
 }
