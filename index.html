@@ -8,6 +8,11 @@
             body {
                 background: #222;
                 color: #fff;
+                margin: 0;
+                font-family: "Verdana", sans-serif;
+            }
+            h1 {
+                text-align: center;
             }
             .nav {
                 align-items: center;
@@ -27,7 +32,42 @@
             }
             .panel {
                 background: #333;
+                border-radius: 10px;
                 flex: 1;
+            }
+            .panel-button {
+                display: flex;
+                gap: 16px;
+                padding: 16px;
+            }
+            .panel-button a {
+                background: #666;
+                border-radius: 10px;
+                color: #fff;
+                flex: 1;
+                padding: 16px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .panel-button a:hover {
+                background: #444;
+            }
+            input[type="range"] {
+                -webkit-appearance: none;
+                background: #222;
+                border-radius: 10px;
+                display: block;
+                margin: 0 auto;
+                height: 100px;
+                width: 80%;
+            }
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                background: url("https://avatars.githubusercontent.com/u/83887299?v=4");
+                background-size: contain;
+                border-radius: 50%;
+                height: 90px;
+                width: 90px;
             }
         </style>
     </head>
@@ -49,9 +89,24 @@
                     <a href="/offsala1"> Desligar Sala 1 </a>
                 </div>
 
+                <h1> Sala 2 </h1>
+                <div class="panel-button">
+                    <a href="/onsala2"> Ligar Sala 2 </a>
+                    <a href="/offsala2"> Desligar Sala 2 </a>
+                </div>
+
+                <h1> Sala 3 </h1>
+                <div class="panel-button">
+                    <a href="/onsala3"> Ligar Sala 3 </a>
+                    <a href="/offsala3"> Desligar Sala 3 </a>
+                </div>
+
             </div>
             <div class="panel">
                 
+                <h1> Garagem </h1>
+                <input type="range">
+
             </div>
         </div>
         
